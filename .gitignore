@@ -1,0 +1,15 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Thunder Lake Systems</title>
+  <meta name="description" content="Book a free discovery call or send a message. Let's talk about what's slowing your operation down." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main id="main-content">
+
+    <!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1 id="page-heading" class="heading-xl" style="margin-top: var(--space-3); margin-bottom: var(--space-4); max-width: 640px;">
+          Tell me what's slowing you down.
+        </h1>
+        <p class="body-lg" style="max-width: 520px;">
+          A 30-minute call is enough to figure out whether I can help and what the right first step looks like.
+          No commitment, no sales pitch.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ══ CONTACT LAYOUT ════════════════════════════════════════════ -->
+    <section class="section" aria-label="Contact options">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- ── Left column: context ─────────────────────────── -->
+          <div>
+            <h2 class="heading-md" style="margin-bottom: var(--space-5);">What to expect</h2>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-5);">
+
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem;" aria-hidden="true">📅</div>
+                <div>
+                  <h3 class="heading-sm" style="margin-bottom: var(--space-1);">Book a Discovery Call</h3>
+                  <p class="body-sm">30 minutes over video or phone. You describe the problem; I ask the questions that matter. I'll tell you honestly whether it's a fit and what the right next step looks like.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem;" aria-hidden="true">🔍</div>
+                <div>
+                  <h3 class="heading-sm" style="margin-bottom: var(--space-1);">Request a Workflow Audit</h3>
+                  <p class="body-sm">If you have a specific process you suspect is broken or inefficient, I can do a targeted audit — map the current state, identify the gaps, and give you a clear picture of what's worth fixing.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                <div style="width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem;" aria-hidden="true">✉️</div>
+                <div>
+                  <h3 class="heading-sm" style="margin-bottom: var(--space-1);">Send a Message</h3>
+                  <p class="body-sm">Prefer to write first? Use the form or email me directly. I respond to all inquiries within one business day.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Direct contact -->
+            <div style="margin-top: var(--space-7); padding: var(--space-5); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+              <p style="font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--space-4);">Direct Contact</p>
+              <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+                <a href="mailto:tlevander.py@gmail.com" style="font-size: .9375rem; color: var(--accent); font-weight: 500; display: flex; align-items: center; gap: var(--space-2);">
+                  <span aria-hidden="true">📧</span> tlevander.py@gmail.com
+                </a>
+                <!-- Add more contact methods here (LinkedIn, Calendly link, phone) -->
+                <p style="font-size: .8125rem; color: var(--text-light);">
+                  ✏️ <em>Placeholder — add a Calendly link or other scheduling option here for direct booking.</em>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ── Right column: form ────────────────────────────── -->
+          <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-6);">
+            <h2 class="heading-sm" style="margin-bottom: var(--space-5);">Send a message</h2>
+
+            <form class="contact-form" novalidate aria-label="Contact form">
+
+              <div style="display: grid; gap: var(--space-5);" class="form-row-2">
+                <div class="form-group">
+                  <label for="first-name">First name <span style="color: var(--accent);">*</span></label>
+                  <input type="text" id="first-name" name="first_name" autocomplete="given-name" placeholder="Jane" required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last name <span style="color: var(--accent);">*</span></label>
+                  <input type="text" id="last-name" name="last_name" autocomplete="family-name" placeholder="Smith" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work email <span style="color: var(--accent);">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company or organization</label>
+                <input type="text" id="company" name="company" autocomplete="organization" placeholder="Acme Corp" />
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">What are you looking for? <span style="color: var(--accent);">*</span></label>
+                <select id="inquiry-type" name="inquiry_type" required>
+                  <option value="" disabled selected>Select one…</option>
+                  <option value="discovery">Book a discovery call</option>
+                  <option value="audit">Request a workflow audit</option>
+                  <option value="project">Discuss a specific project</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Describe the problem <span style="color: var(--accent);">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="What workflow or process is breaking down? What's the impact on your team or business? The more specific, the better."
+                  required
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 14px 24px;">
+                Send Message
+              </button>
+
+              <p style="font-size: .8125rem; color: var(--text-light); text-align: center;">
+                I respond to all inquiries within one business day.
+              </p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══ FAQ ═══════════════════════════════════════════════════════ -->
+    <section class="section" aria-labelledby="faq-heading" style="background: var(--surface); padding-top: var(--space-7);">
+      <div class="container-narrow">
+        <div class="section-header section-header--center">
+          <span class="eyebrow">Common Questions</span>
+          <h2 id="faq-heading" class="heading-lg">Before you reach out.</h2>
+        </div>
+
+        <div style="margin-top: var(--space-6); display: flex; flex-direction: column; gap: var(--space-5);">
+
+          <details style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5);" open>
+            <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--space-4);">
+              How do I know if my problem is a good fit?
+              <span style="font-size: 1.25rem; flex-shrink: 0;" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin-top: var(--space-4); font-size: .9375rem; color: var(--text-muted); line-height: 1.65;">
+              If you have a recurring, manual process that takes meaningful time every week — or a system that's fragile, undocumented, or dependent on one person — that's a good starting point. The discovery call is the right place to find out whether it's something I can help with.
+            </p>
+          </details>
+
+          <details style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5);">
+            <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--space-4);">
+              How long do projects typically take?
+              <span style="font-size: 1.25rem; flex-shrink: 0;" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin-top: var(--space-4); font-size: .9375rem; color: var(--text-muted); line-height: 1.65;">
+              It depends on scope. A targeted automation or integration project might take two to four weeks. A larger workflow overhaul or database migration might take six to twelve weeks. I'll give you a specific timeline in the project proposal before any work begins.
+            </p>
+          </details>
+
+          <details style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5);">
+            <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--space-4);">
+              Do you work with non-technical clients?
+              <span style="font-size: 1.25rem; flex-shrink: 0;" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin-top: var(--space-4); font-size: .9375rem; color: var(--text-muted); line-height: 1.65;">
+              Yes — most of my clients are business owners and operations leaders, not technical staff. I communicate in plain language, explain the tradeoffs clearly, and build systems that don't require technical expertise to use or maintain.
+            </p>
+          </details>
+
+          <details style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-5);">
+            <summary style="font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--space-4);">
+              What happens after a project is complete?
+              <span style="font-size: 1.25rem; flex-shrink: 0;" aria-hidden="true">+</span>
+            </summary>
+            <p style="margin-top: var(--space-4); font-size: .9375rem; color: var(--text-muted); line-height: 1.65;">
+              Every project ends with documentation, a walkthrough with your team, and full ownership of what was built. There's no lock-in. If you want ongoing support, a maintenance retainer is available — but it's never required.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+
+  <style>
+    /* Two-column name row */
+    @media (min-width: 480px) {
+      .form-row-2 { grid-template-columns: 1fr 1fr !important; }
+    }
+
+    /* FAQ open/close indicator */
+    details[open] summary span { transform: rotate(45deg); display: inline-block; transition: transform .2s; }
+    details summary span { display: inline-block; transition: transform .2s; }
+  </style>
+</body>
+</html>
