@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Case Studies — Thunder Lake Systems</title>
-  <meta name="description" content="Real workflow modernization projects: the problems, the approach, and the results. No invented metrics." />
+  <meta name="description" content="Real business automation projects — the problems, what we did, and what changed." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -21,11 +21,12 @@
       <div class="container">
         <span class="eyebrow">Case Studies</span>
         <h1 id="page-heading" class="heading-xl" style="margin-top: var(--space-3); margin-bottom: var(--space-4); max-width: 680px;">
-          Real problems. Real constraints. Real results.
+          Real problems. Real results.
         </h1>
         <p class="body-lg" style="max-width: 560px;">
-          Every engagement starts with a messy real-world situation — not a clean whiteboard.
-          These are the specifics of what broke, how I fixed it, and what changed.
+          Every engagement starts with a business that has a real problem —
+          something taking too much time, too much manual effort, or carrying too much risk.
+          Here's what we found, what we did, and what changed.
         </p>
       </div>
     </section>
@@ -36,33 +37,23 @@
       <div class="container">
 
 
-
         <!-- ── Case Study 1 — Field Service Scheduling ──────────── -->
         <article class="cs-full" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--space-6);" aria-labelledby="cs1-title">
 
-          <!-- Header -->
           <div style="padding: var(--space-6) var(--space-6) var(--space-5);">
             <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
               <span class="tag">Field Service</span>
-              <span class="tag">Legacy Systems</span>
               <span class="tag">Automation</span>
             </div>
             <h2 id="cs1-title" class="heading-md" style="margin-bottom: var(--space-3);">
-              Replacing Manual Scheduling with Modular Automation in a Field Service Business
+              Automating a Scheduling System for a Field Service Business
             </h2>
             <p class="body-sm" style="color: var(--text-muted); max-width: 620px; line-height: 1.65;">
-              A field service business was running its scheduling operation on an MS Access + VBA stack
-              understood by only one person — brittle, undocumented, and dangerous to touch.
+              A field service business was running its entire scheduling operation on an outdated system
+              that only one person knew how to use — unreliable, undocumented, and too risky to change.
             </p>
-            <div class="tech-stack">
-              <span class="tech-tag">MS Access</span>
-              <span class="tech-tag">VBA</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">Field Service Operations</span>
-            </div>
           </div>
 
-          <!-- Sections -->
           <div style="border-top: 1px solid var(--border);">
 
             <div class="cs-section">
@@ -70,11 +61,12 @@
                 <span class="cs-section-num">01</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Context</p>
-                  <h3 class="cs-section-title">The Environment</h3>
+                  <h3 class="cs-section-title">The Situation</h3>
                   <p class="body-sm">
-                    Inherited a fragmented MS Access and VBA stack running the scheduling and operations of an active field service business.
-                    Scheduling rules were hardcoded, logic was understood by a single person, and the codebase had grown organically with no
-                    documentation, version control, or deployment process.
+                    A field service business had built up its scheduling operation over the years using an older software tool.
+                    The system worked — barely — but all the rules about how jobs were scheduled lived inside the software in ways
+                    that only one person understood. There was no documentation, no way to make changes safely, and no process
+                    for keeping the system up to date.
                   </p>
                 </div>
               </div>
@@ -85,11 +77,11 @@
                 <span class="cs-section-num">02</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Problem</p>
-                  <h3 class="cs-section-title">Brittle by Design</h3>
+                  <h3 class="cs-section-title">One Change Away from Breaking</h3>
                   <p class="body-sm">
-                    Any modification to the scheduling logic risked breaking production workflows. SQL patterns were incorrect.
-                    Hardcoded thresholds were scattered across modules. The wrong VBA module was being used as the execution point.
-                    There was no safe path to change anything.
+                    Any time someone needed to update the scheduling rules, they risked breaking the whole operation.
+                    Errors had accumulated quietly over the years that nobody had caught. The business was fully dependent
+                    on one person's knowledge of how everything worked — and if that person was unavailable, so was the system.
                   </p>
                 </div>
               </div>
@@ -99,14 +91,14 @@
               <div class="cs-section-inner">
                 <span class="cs-section-num">03</span>
                 <div class="cs-section-body">
-                  <p class="cs-section-label">What I Did</p>
-                  <h3 class="cs-section-title">SuperScheduler</h3>
+                  <p class="cs-section-label">What We Did</p>
+                  <h3 class="cs-section-title">A Scheduling System That Works Without a Safety Net</h3>
                   <ul class="cs-what-list">
-                    <li>Designed and built a modular scheduling engine with interval-driven priority logic — dynamically pulling per-treatment thresholds from a lookup table rather than hardcoding values in code.</li>
-                    <li>Built a keyword-matching system that classifies treatment types at runtime using VBA pattern matching, with a structured fallback for unmatched records and an operator-facing report to surface data gaps.</li>
-                    <li>Introduced minimum interval enforcement between treatments, preventing premature re-scheduling without any manual checks.</li>
-                    <li>Delivered structured version control, object file standards, deployment checklists, and plain-English VBA documentation — giving the system a maintainable foundation it had never had.</li>
-                    <li>Diagnosed and corrected root causes including broken SQL join patterns, wrong module usage, and stale field references — without disrupting live production workflows.</li>
+                    <li>Built a new scheduling system that automatically prioritizes jobs based on rules — rules that now live in one easy-to-update location instead of being buried and scattered throughout the software.</li>
+                    <li>Added a system that automatically recognizes and categorizes each type of job, with a safety net for anything unusual and a report that flags gaps for the operations team to review.</li>
+                    <li>Built in automatic safeguards to prevent jobs from being scheduled too soon — no manual checking required.</li>
+                    <li>Found and fixed errors that had quietly built up over time — things causing the system to behave unpredictably — all without interrupting the day-to-day operation of the business.</li>
+                    <li>Put in place a clear process for making future updates safely, along with documentation so any changes can be understood and made by someone other than the original author.</li>
                   </ul>
                 </div>
               </div>
@@ -117,14 +109,15 @@
                 <span class="cs-section-num">04</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Result</p>
-                  <h3 class="cs-section-title">A System Worth Trusting</h3>
+                  <h3 class="cs-section-title">A System the Business Can Trust</h3>
                   <p class="body-sm" style="margin-bottom: var(--space-3);">
-                    The business moved from a fragile legacy setup toward a modular, maintainable scheduling system — with interval-aware
-                    prioritization, safer deployment practices, and operator-facing visibility into data quality.
+                    The business went from a scheduling system that was one bad day away from failing to one that runs
+                    reliably and can be updated without expert knowledge. Scheduling rules that were once locked inside
+                    the software are now clearly documented and manageable.
                   </p>
                   <p class="body-sm">
-                    Changes that previously required tribal knowledge can now be made by reading the code.
-                    The system documents itself. Production is no longer one edit away from breaking.
+                    The operation no longer depends on one person knowing everything. Changes can be made safely.
+                    And when something does need to be updated, there's a clear process for doing it without risk.
                   </p>
                 </div>
               </div>
@@ -135,13 +128,13 @@
                 <span class="cs-section-num cs-section-num--light">05</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label cs-section-label--light">Why It Matters</p>
-                  <h3 class="cs-section-title cs-section-title--light">Pattern of Work</h3>
+                  <h3 class="cs-section-title cs-section-title--light">The Bigger Picture</h3>
                   <p style="font-size: .9375rem; color: var(--dark-muted); line-height: 1.65; font-style: italic; margin-bottom: var(--space-3);">
-                    "Enter a messy legacy environment, diagnose root causes, and deliver a working system incrementally — without breaking production."
+                    "Walk into an active business running on a system nobody fully understands — find what's broken, fix it carefully, and leave them with something reliable."
                   </p>
                   <p style="font-size: .875rem; color: var(--dark-muted); line-height: 1.65;">
-                    This project demonstrates the ability to operate under real constraints — existing architecture, active business operations,
-                    zero tolerance for downtime — and still move the system meaningfully forward.
+                    This is the kind of work we do. We don't require a clean slate or an ideal situation.
+                    We come into businesses as they are, improve what needs improving, and make sure nothing breaks along the way.
                   </p>
                 </div>
               </div>
@@ -151,31 +144,23 @@
         </article>
 
 
-        <!-- ── Case Study 2 — Data Architecture Refactor ────────── -->
+        <!-- ── Case Study 2 — Scheduling Rules Cleanup ──────────── -->
         <article class="cs-full" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--space-6);" aria-labelledby="cs2-title">
 
-          <!-- Header -->
           <div style="padding: var(--space-6) var(--space-6) var(--space-5);">
             <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
-              <span class="tag">Data Architecture</span>
-              <span class="tag">Legacy Systems</span>
-              <span class="tag">SQL</span>
+              <span class="tag">Field Service</span>
+              <span class="tag">Operations</span>
             </div>
             <h2 id="cs2-title" class="heading-md" style="margin-bottom: var(--space-3);">
-              Rebuilding Scheduling Rules into a Canonical, Interval-Aware Data Model
+              Untangling a Web of Scheduling Rules for a Field Service Operation
             </h2>
             <p class="body-sm" style="color: var(--text-muted); max-width: 620px; line-height: 1.65;">
-              A scheduling system's business logic was spread across hardcoded values, inconsistent SQL patterns, and scattered VBA rules —
-              making it nearly impossible to reason about or safely change.
+              A scheduling system's business rules had grown so scattered and inconsistent over time that
+              no one could reliably predict what the system would do — or safely change it when they needed to.
             </p>
-            <div class="tech-stack">
-              <span class="tech-tag">MS Access</span>
-              <span class="tech-tag">VBA</span>
-              <span class="tech-tag">SQL</span>
-            </div>
           </div>
 
-          <!-- Sections -->
           <div style="border-top: 1px solid var(--border);">
 
             <div class="cs-section">
@@ -183,10 +168,12 @@
                 <span class="cs-section-num">01</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Context</p>
-                  <h3 class="cs-section-title">The Environment</h3>
+                  <h3 class="cs-section-title">The Situation</h3>
                   <p class="body-sm">
-                    Inherited a scheduling system where treatment logic was spread across hardcoded values, inconsistent SQL patterns,
-                    and scattered VBA rules. The underlying data model had grown organically and was difficult to reason about at the rule layer.
+                    A field service operation had accumulated years of scheduling rules across their system — rules about
+                    which jobs get scheduled, when, and how often. These rules had been added piecemeal over time
+                    and never organized. The result was a system that was difficult to understand, difficult to manage,
+                    and difficult to change without breaking something.
                   </p>
                 </div>
               </div>
@@ -197,11 +184,13 @@
                 <span class="cs-section-num">02</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Problem</p>
-                  <h3 class="cs-section-title">Scattered Logic, Platform Constraints</h3>
+                  <h3 class="cs-section-title">Rules Nobody Could Manage</h3>
                   <p class="body-sm">
-                    The business logic was hard to maintain because matching behavior, treatment intervals, and update logic were not centralized.
-                    MS Access also imposed structural limitations — some changes could not be implemented with standard SQL patterns alone,
-                    requiring workarounds that weren't documented and couldn't be repeated safely.
+                    The rules governing how jobs were scheduled were spread across hundreds of individual entries,
+                    each one separate, each one requiring manual maintenance. When something needed to change, there was
+                    no clear place to go — you had to find and update entries in multiple places, and hope you didn't miss any.
+                    The scheduling tool also had its own limitations that made certain kinds of updates impossible to do in the standard way,
+                    and those workarounds had never been written down.
                   </p>
                 </div>
               </div>
@@ -211,14 +200,14 @@
               <div class="cs-section-inner">
                 <span class="cs-section-num">03</span>
                 <div class="cs-section-body">
-                  <p class="cs-section-label">What I Did</p>
-                  <h3 class="cs-section-title">Canonical Rule Architecture</h3>
+                  <p class="cs-section-label">What We Did</p>
+                  <h3 class="cs-section-title">Fewer Rules, Better Coverage</h3>
                   <ul class="cs-what-list">
-                    <li>Rebuilt the scheduling logic around a canonical keyword approach, reducing a 234-row hardcoded table to 96 canonical records.</li>
-                    <li>Replaced full-string matching with interval-aware keyword classification so treatments could be reasoned about through a cleaner rule model.</li>
-                    <li>Handled Access update limitations by pivoting to a VBA recordset loop when correlated subquery updates were not supported — and documented the workaround pattern for reuse.</li>
-                    <li>Designed the logic so rule changes could flow through a central data structure instead of being scattered across code.</li>
-                    <li>Captured the platform constraints and implementation pattern in plain-English documentation for future maintenance.</li>
+                    <li>Rebuilt the scheduling rules from the ground up — reducing over 230 individual entries down to fewer than 100 organized categories that cover the same ground more reliably and consistently.</li>
+                    <li>Replaced a system where each job type had its own separate rule with a cleaner approach where job types are grouped into categories — making it much easier to understand what the system will do and why.</li>
+                    <li>Found a practical solution for a limitation in the scheduling tool that was preventing certain updates from working at all — and documented it clearly so the same approach can be used in the future.</li>
+                    <li>Restructured the rules so that when something needs to change, there's one place to go instead of dozens.</li>
+                    <li>Wrote plain-English documentation explaining the logic, the limitations, and how to work within them — so the next person who touches the system isn't starting from scratch.</li>
                   </ul>
                 </div>
               </div>
@@ -229,11 +218,12 @@
                 <span class="cs-section-num">04</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Result</p>
-                  <h3 class="cs-section-title">Simpler Logic, Safer Changes</h3>
+                  <h3 class="cs-section-title">Simpler to Manage, Easier to Change</h3>
                   <p class="body-sm">
-                    The scheduling logic became more compact, more consistent, and easier to extend. Matching was simplified into a canonical
-                    structure, update behavior was made compatible with Access's limitations, and future rule changes no longer depend on
-                    scattered hardcoded values.
+                    The scheduling rules are now compact, consistent, and manageable. The team no longer has to dig through hundreds of
+                    individual entries to find what they're looking for. Updates that previously required hunting across the whole system
+                    can now be made in one place. And the workarounds that were previously invisible and undocumented are now
+                    written down and repeatable.
                   </p>
                 </div>
               </div>
@@ -244,13 +234,14 @@
                 <span class="cs-section-num cs-section-num--light">05</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label cs-section-label--light">Why It Matters</p>
-                  <h3 class="cs-section-title cs-section-title--light">Pattern of Work</h3>
+                  <h3 class="cs-section-title cs-section-title--light">The Bigger Picture</h3>
                   <p style="font-size: .9375rem; color: var(--dark-muted); line-height: 1.65; font-style: italic; margin-bottom: var(--space-3);">
-                    "Strong database architecture judgment and the ability to solve real platform constraints without forcing a greenfield rebuild."
+                    "Take the tangled mess of rules underneath a system, untangle it, and rebuild it into something the business can actually manage — without starting over."
                   </p>
                   <p style="font-size: .875rem; color: var(--dark-muted); line-height: 1.65;">
-                    This project demonstrates how to simplify complex business logic into a maintainable data model — working within real platform
-                    constraints, not around them.
+                    Most businesses don't need a brand-new system — they need someone to clean up the one they have.
+                    This project is an example of finding practical solutions within real constraints,
+                    rather than forcing an expensive rebuild.
                   </p>
                 </div>
               </div>
@@ -263,23 +254,20 @@
         <!-- ── Case Study 3 — Guest List Management ─────────────── -->
         <article class="cs-full" style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--space-6);" aria-labelledby="cs3-title">
 
-          <!-- Header -->
           <div style="padding: var(--space-6) var(--space-6) var(--space-5);">
             <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-4);">
-              <span class="tag">Product Build</span>
-              <span class="tag">Full-Stack</span>
               <span class="tag">Music Industry</span>
+              <span class="tag">Custom Software</span>
             </div>
             <h2 id="cs3-title" class="heading-md" style="margin-bottom: var(--space-3);">
-              Guest List Management for Music Industry Organizations
+              Guest List Management for a Music Industry Organization
             </h2>
             <p class="body-sm" style="color: var(--text-muted); max-width: 620px; line-height: 1.65;">
-              A music industry client needed centralized guest list management across multiple shows, bands, and internal teams.
-              The process had been handled informally — no approval flow, no admin visibility, no audit trail.
+              A music industry client was managing guest lists across multiple shows informally —
+              through texts, emails, and spreadsheets — with no real oversight, no approval process, and no record of what happened.
             </p>
           </div>
 
-          <!-- Sections -->
           <div style="border-top: 1px solid var(--border);">
 
             <div class="cs-section">
@@ -287,10 +275,11 @@
                 <span class="cs-section-num">01</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Context</p>
-                  <h3 class="cs-section-title">The Environment</h3>
+                  <h3 class="cs-section-title">The Situation</h3>
                   <p class="body-sm">
-                    A music industry client needed a better way to manage guest lists across multiple shows, bands, and internal teams.
-                    The process had been handled informally, with no centralized tracking, approval flow, or admin visibility.
+                    A music industry organization needed a better way to manage guest lists across multiple shows, bands, and internal teams.
+                    As the operation grew, the informal process — requests coming in through different channels, managed by different people —
+                    was becoming harder to control and easier for things to fall through the cracks.
                   </p>
                 </div>
               </div>
@@ -303,9 +292,9 @@
                   <p class="cs-section-label">Problem</p>
                   <h3 class="cs-section-title">No System, No Visibility</h3>
                   <p class="body-sm">
-                    There was no system to collect, review, or approve guest requests at scale. Members submitted requests ad hoc,
-                    admins lacked a unified view of capacity, credentials, and status, and there was no audit trail.
-                    As show volume grew, the informal process became a liability.
+                    There was no central place to submit, review, or approve guest requests. Members submitted requests however they could.
+                    Staff had no unified view of who was approved, what capacity remained for each show, or what had changed and when.
+                    As show volume increased, the informal process became a real operational risk.
                   </p>
                 </div>
               </div>
@@ -315,14 +304,14 @@
               <div class="cs-section-inner">
                 <span class="cs-section-num">03</span>
                 <div class="cs-section-body">
-                  <p class="cs-section-label">What I Did</p>
-                  <h3 class="cs-section-title">Dual-Portal Application</h3>
+                  <p class="cs-section-label">What We Did</p>
+                  <h3 class="cs-section-title">A Purpose-Built Tool for the Way They Actually Work</h3>
                   <ul class="cs-what-list">
-                    <li>Designed and built a full-stack guest list management application from scratch — purpose-built for the operational realities of a working music organization.</li>
-                    <li>Built a mobile-first member portal for submitting guest requests, with dynamic attendee and subguest management so members can structure requests without back-and-forth.</li>
-                    <li>Built a desktop-first admin portal for reviewing requests, managing credentials, tracking per-show capacity, and controlling access — giving admins a single place to manage everything.</li>
-                    <li>Implemented role-based access control across three user roles, keeping member, admin, and operator views cleanly separated without complexity for end users.</li>
-                    <li>Built in soft deletes, full audit logging, and inline editing throughout the admin view — so all changes are tracked and reversible without technical intervention.</li>
+                    <li>Designed and built a complete guest list management system from the ground up — built around how this specific organization actually operates, not a generic off-the-shelf solution.</li>
+                    <li>Built a mobile-friendly portal for members to submit guest requests for any show — adding their guests, specifying details, and tracking the status of their submissions without having to contact anyone.</li>
+                    <li>Built a separate admin view where staff can see all requests in one place, approve or decline them, track how many spots remain for each show, and manage credentials — all from a single screen.</li>
+                    <li>Set up three levels of access — members, admins, and staff — so each person sees only what they need to, with no overlap or confusion.</li>
+                    <li>Made every action reversible: nothing is permanently deleted, every change is recorded with a timestamp and who made it, and staff can edit anything directly without navigating to a separate page.</li>
                   </ul>
                 </div>
               </div>
@@ -333,13 +322,14 @@
                 <span class="cs-section-num">04</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label">Result</p>
-                  <h3 class="cs-section-title">Production-Ready from Day One</h3>
+                  <h3 class="cs-section-title">From Informal to Under Control</h3>
                   <p class="body-sm" style="margin-bottom: var(--space-3);">
-                    Delivered a working, production-ready application with seeded real-world data and Vercel-ready deployment.
-                    Admins can manage shows end-to-end from a single view. Members can submit structured guest requests in under a minute.
+                    Staff can manage an entire show's guest list from one screen. Members can submit a complete request in under a minute.
+                    Nothing gets lost, changed without a record, or forgotten.
                   </p>
                   <p class="body-sm">
-                    All changes are tracked and reversible. The system handles the operational complexity so the team doesn't have to.
+                    The organization went from managing this process informally — through texts and emails — to having a system
+                    that handles it for them. The process runs itself.
                   </p>
                 </div>
               </div>
@@ -350,13 +340,14 @@
                 <span class="cs-section-num cs-section-num--light">05</span>
                 <div class="cs-section-body">
                   <p class="cs-section-label cs-section-label--light">Why It Matters</p>
-                  <h3 class="cs-section-title cs-section-title--light">Pattern of Work</h3>
+                  <h3 class="cs-section-title cs-section-title--light">The Bigger Picture</h3>
                   <p style="font-size: .9375rem; color: var(--dark-muted); line-height: 1.65; font-style: italic; margin-bottom: var(--space-3);">
-                    "Design and ship a full-stack operational tool fast — with a clean user experience and the controls needed for real-world use."
+                    "Take an informal, ad-hoc process and turn it into a real system — one that's easy to use, gives management visibility, and grows with the organization."
                   </p>
                   <p style="font-size: .875rem; color: var(--dark-muted); line-height: 1.65;">
-                    This project demonstrates product thinking, workflow design, and technical execution beyond legacy system modernization —
-                    the ability to identify what an operation actually needs, build it cleanly, and hand it off ready to use.
+                    Some businesses need their existing systems fixed. Others need a new system built.
+                    This is an example of the latter — identifying exactly what an operation needs,
+                    building it cleanly, and handing it off ready to use on day one.
                   </p>
                 </div>
               </div>
@@ -373,12 +364,10 @@
     <section class="section" aria-labelledby="cs-cta-heading">
       <div class="container">
         <div class="cta-banner">
-          <span class="eyebrow eyebrow--light">Start a Conversation</span>
-          <h2 id="cs-cta-heading" class="heading-lg">Have a workflow problem worth solving?</h2>
-          <p>Tell me what's slowing you down. A 30-minute call is enough to figure out whether I can help — and what that would look like.</p>
+          <h2 id="cs-cta-heading" class="heading-lg">Recognize any of these problems?</h2>
+          <p>We can help. Tell us what's slowing you down and we'll tell you honestly what we can do about it.</p>
           <div class="btn-actions">
-            <a href="contact.html" class="btn btn-primary">Book a Free Discovery Call</a>
-            <a href="services.html" class="btn btn-outline-light">See What I Offer</a>
+            <a href="contact.html" class="btn btn-primary">Get a Free Consultation</a>
           </div>
         </div>
       </div>
