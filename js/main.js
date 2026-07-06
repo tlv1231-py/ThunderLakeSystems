@@ -62,23 +62,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Hero word cycling ---------------------------------------------
   const cycleEl = document.querySelector('.cycle-word');
   if (cycleEl) {
-    const words = ['accelerate.', 'compete.', 'win.', 'survive.'];
+    const words = [
+      { text: 'accelerate.', color: '#2358e8' },
+      { text: 'compete.',    color: '#d97706' },
+      { text: 'win.',        color: '#15803d' },
+      { text: 'survive.',    color: '#dc2626' },
+    ];
     let idx = 0;
 
     function nextWord() {
-      cycleEl.style.animation = 'cycle-out .28s ease forwards';
+      // Fade out
+      cycleEl.style.opacity = '0';
 
       setTimeout(() => {
+        // Swap content + color while invisible
         idx = (idx + 1) % words.length;
-        cycleEl.textContent = words[idx];
-        cycleEl.style.animation = 'none';
-        void cycleEl.offsetHeight; // force reflow so browser resets animation state
-        cycleEl.style.animation = 'cycle-in .28s ease forwards';
-        setTimeout(() => { cycleEl.style.animation = ''; }, 280);
-      }, 280);
+        cycleEl.textContent = words[idx].text;
+        cycleEl.style.color  = words[idx].color;
+        // Fade in
+        cycleEl.style.opacity = '1';
+      }, 450);
     }
 
-    setInterval(nextWord, 2400);
+    setInterval(nextWord, 2800);
   }
 
 
