@@ -59,6 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  // --- Hero word cycling ---------------------------------------------
+  const cycleEl = document.querySelector('.cycle-word');
+  if (cycleEl) {
+    const words = ['accelerate.', 'compete.', 'win.', 'survive.'];
+    let idx = 0;
+
+    setInterval(() => {
+      cycleEl.classList.add('is-exiting');
+
+      setTimeout(() => {
+        idx = (idx + 1) % words.length;
+        cycleEl.textContent = words[idx];
+        cycleEl.classList.remove('is-exiting');
+        cycleEl.classList.add('is-entering');
+        setTimeout(() => cycleEl.classList.remove('is-entering'), 280);
+      }, 280);
+
+    }, 2400);
+  }
+
+
   // --- Contact form (placeholder submit) -----------------------------
   const form = document.querySelector('.contact-form');
   if (form) {

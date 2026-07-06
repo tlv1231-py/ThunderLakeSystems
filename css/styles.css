@@ -420,26 +420,37 @@ h1, h2, h3, h4 {
   font-size: .8125rem;
 }
 
-/* --- Automate sequence (hero tagline) --------------------- */
-.automate-sequence {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 var(--space-7) 0;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+/* --- Automate hero (cycling tagline) ---------------------- */
+@keyframes cycle-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.automate-sequence li {
-  font-size: clamp(2rem, 5.5vw, 3.75rem);
+@keyframes cycle-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-10px); }
+}
+
+.automate-hero {
+  font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 700;
   letter-spacing: -.03em;
-  line-height: 1.1;
+  line-height: 1.15;
+  margin-bottom: var(--space-6);
   color: var(--text);
 }
 
-.automate-sequence li:last-child {
+.cycle-word {
+  display: inline-block;
   color: var(--accent);
+}
+
+.cycle-word.is-exiting {
+  animation: cycle-out .28s ease forwards;
+}
+
+.cycle-word.is-entering {
+  animation: cycle-in .28s ease forwards;
 }
 
 /* --- Automation pills ------------------------------------- */
