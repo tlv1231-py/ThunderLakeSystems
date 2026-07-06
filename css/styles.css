@@ -423,10 +423,11 @@ h1, h2, h3, h4 {
 /* --- Automate sequence (hero tagline) --------------------- */
 .automate-sequence {
   list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-7) 0;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-bottom: var(--space-7);
 }
 
 .automate-sequence li {
@@ -469,14 +470,13 @@ h1, h2, h3, h4 {
 
 /* --- Work list (slim case study rows) --------------------- */
 .work-list {
-  display: flex;
-  flex-direction: column;
+  display: block;
   border-top: 1px solid var(--border);
+  width: 100%;
 }
 
 .work-row {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: baseline;
   gap: var(--space-4);
   padding: var(--space-5) 0;
@@ -484,6 +484,7 @@ h1, h2, h3, h4 {
   text-decoration: none;
   color: var(--text);
   transition: color .15s;
+  width: 100%;
 }
 
 .work-row:hover { color: var(--accent); }
