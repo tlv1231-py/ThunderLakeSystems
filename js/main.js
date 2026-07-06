@@ -65,18 +65,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const words = ['accelerate.', 'compete.', 'win.', 'survive.'];
     let idx = 0;
 
-    setInterval(() => {
-      cycleEl.classList.add('is-exiting');
+    function nextWord() {
+      cycleEl.style.animation = 'cycle-out .28s ease forwards';
 
       setTimeout(() => {
         idx = (idx + 1) % words.length;
         cycleEl.textContent = words[idx];
-        cycleEl.classList.remove('is-exiting');
-        cycleEl.classList.add('is-entering');
-        setTimeout(() => cycleEl.classList.remove('is-entering'), 280);
+        cycleEl.style.animation = 'none';
+        void cycleEl.offsetHeight; // force reflow so browser resets animation state
+        cycleEl.style.animation = 'cycle-in .28s ease forwards';
+        setTimeout(() => { cycleEl.style.animation = ''; }, 280);
       }, 280);
+    }
 
-    }, 2400);
+    setInterval(nextWord, 2400);
   }
 
 
