@@ -23,7 +23,7 @@
   const headerHTML = `
 <header class="site-header" role="banner">
   <nav class="nav container" aria-label="Main navigation">
-    <a href="index.html" class="nav-logo">Thunder<span>Lake</span> Systems</a>
+    <a href="index.html" class="nav-logo">Thunder<span>Lake</span> Automations</a>
 
     <!-- Desktop links -->
     <ul class="nav-links" role="list">
@@ -58,7 +58,7 @@
     <div class="footer-inner">
 
       <div class="footer-brand">
-        <a href="index.html" class="footer-logo">Thunder<span>Lake</span> Systems</a>
+        <a href="index.html" class="footer-logo">Thunder<span>Lake</span> Automations</a>
         <p>Workflow modernization for businesses that need reliable systems, not just software.</p>
       </div>
 
@@ -85,7 +85,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>&copy; ${year} Thunder Lake Systems. All rights reserved.</span>
+      <span>&copy; ${year} Thunder Lake Automations. All rights reserved.</span>
       <span>Workflow modernization &amp; automation consulting.</span>
     </div>
   </div>
